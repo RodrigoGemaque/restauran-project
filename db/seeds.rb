@@ -20,7 +20,7 @@ puts "Creating Products"
 25.times do 
   Product.create!(
     name: "Pizza", 
-    description: "asdfasdfasdfasdfasdfasdadf pizza",
+    description: "Pizza parmegiana com calabresa",
     price: 11.99,
     catering: true
   )
