@@ -1,0 +1,18 @@
+
+<div class="menu-container">
+    <div class="row">
+        <% 3.times do %>
+        <% @products.each do |product| %>
+        <div class="col-4">
+          <div class="card mb-2">
+          
+            <h5 class = 'text-center'><%=product.name%></h5>
+            <p><%= product.description %></p>
+            <span><%= product.price %> | <%= product.catering ? "Available for catering" : "" %>
+        
+          </div>
+        </div>
+        <% end %>
+        <% end %>
+    </div>
+</div>
